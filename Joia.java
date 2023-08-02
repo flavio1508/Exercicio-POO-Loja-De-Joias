@@ -13,7 +13,6 @@ public class Joia {
         this.tipo = tipo;
     }
 
-    // Getters e Setters
 
     public double getValor() {
         return valor;
