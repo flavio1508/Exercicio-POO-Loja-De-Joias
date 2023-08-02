@@ -32,11 +32,29 @@ public class AplicacaoPrincipal {
                 Anel anel = new Anel(valorAnel, pesoAnel, materialAnel, quantidadeEstoqueAnel);
                 fabricaDeJoias.adicionarJoia(anel);
             } else if (escolha == 2) {
-                // Similar logic for adding Colar
-                // ...
+                 System.out.print("Valor do Colar: ");
+                double valorColar = scanner.nextDouble();
+                System.out.print("Peso do Colar: ");
+                double pesoColar = scanner.nextDouble();
+                scanner.nextLine();
+                System.out.print("Material do Colar: ");
+                String materialColar = scanner.nextLine();
+                System.out.print("Quantidade em Estoque do Colar: ");
+                int quantidadeEstoqueColar = scanner.nextInt();
+                Colar colar = new Colar(valorColar, pesoColar, materialColar, quantidadeEstoqueColar);
+                fabricaDeJoias.adicionarJoia(colar);
             } else if (escolha == 3) {
-                // Similar logic for adding Brinco
-                // ...
+               System.out.print("Valor do Brinco: ");
+                double valorBrinco = scanner.nextDouble();
+                System.out.print("Peso do Brinco: ");
+                double pesoBrinco = scanner.nextDouble();
+                scanner.nextLine();
+                System.out.print("Material do Brinco: ");
+                String materialBrinco = scanner.nextLine();
+                System.out.print("Quantidade em Estoque do Brinco: ");
+                int quantidadeEstoqueBrinco = scanner.nextInt();
+                Brinco brinco = new Brinco(valorBrinco, pesoBrinco, materialBrinco, quantidadeEstoqueBrinco);
+                fabricaDeJoias.adicionarJoia(brinco);
             } else if (escolha == 4) {
                 System.out.print("Digite o tipo de joia para buscar: ");
                 String tipoParaBuscar = scanner.nextLine();
