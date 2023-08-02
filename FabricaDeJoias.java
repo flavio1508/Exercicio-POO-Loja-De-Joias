@@ -8,13 +8,11 @@ public class FabricaDeJoias {
         listaDeJoias = new ArrayList<>();
     }
 
-    // Método para adicionar uma nova joia à lista
     public void adicionarJoia(Joia joia) {
         listaDeJoias.add(joia);
         System.out.println("Joia adicionada com sucesso!");
     }
 
-    // Método para buscar joias por tipo
     public void buscarJoiaPorTipo(String tipo) {
         boolean encontrada = false;
         for (Joia joia : listaDeJoias) {
@@ -29,7 +27,6 @@ public class FabricaDeJoias {
         }
     }
 
-    // Método para encontrar o tipo de joia com maior valor
     public String encontrarTipoDeJoiaMaisCara() {
         double valorMaximo = 0;
         String tipoJoiaMaisCara = "";
