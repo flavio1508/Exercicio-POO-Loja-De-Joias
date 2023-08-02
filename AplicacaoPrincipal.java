@@ -15,7 +15,7 @@ public class AplicacaoPrincipal {
             System.out.print("Digite sua escolha: ");
             int escolha = scanner.nextInt();
 
-            scanner.nextLine(); // Limpa o caractere de nova linha do buffer
+            scanner.nextLine(); 
 
             switch (escolha) {
                 case 1:
